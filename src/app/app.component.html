@@ -1,6 +1,5 @@
-<div class="main">
-	<label>What's your name?: </label>
-	<input [formControl]="name" placeholder="Put your name here">
-
-	<h1>Hello {{name.value !== "" ? name.value : "World"}}!</h1>
+<div class="app">
+  <app-name-edit></app-name-edit>
+  <hr>
+  <app-counter></app-counter>
 </div>
