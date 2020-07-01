@@ -1,10 +1,11 @@
 image:
   file: .gitpod.Dockerfile
-
 ports:
   - port: 4200
     onOpen: open-preview
-
 tasks:
   - init: echo y | npm i; ng build
-    command: ng serve
+    command: ng serve --public-host `gp url 4200 | cut -c 9-` --open
+vscode:
+  extensions:
+    - Angular.ng-template@0.1000.1:SI9sdELNl5vkSjqL6IsEnA==
