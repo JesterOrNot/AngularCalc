@@ -1,6 +1,6 @@
-<h1>Hello World From Angular</h1>
+<div class="main">
+  <label>What's your name?: </label>
+  <input [formControl]="name">
 
-<label>What's your name?: </label>
-<input [formControl]="name">
-
-<h1 class="output">Hello {{name.value !== "" ? name.value : "World"}}!</h1>
+  <h1>Hello {{name.value !== "" ? name.value : "World"}}!</h1>
+</div>
