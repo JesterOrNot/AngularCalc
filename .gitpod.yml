@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 4200
+    onOpen: open-preview
+
+tasks:
+  - init: echo y | npm i; ng build
+    command: ng serve
